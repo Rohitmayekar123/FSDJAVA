@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Scheduled Meetings</title>
+    <link rel="stylesheet" href="view-meetings.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Client Management App</div>
+            <div class="nav-links">
+                <a href="logout.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- View Scheduled Meetings Section -->
+    <div class="view-container">
+        <h2>Scheduled Meetings</h2>
+        <button onclick="window.location.href='schedule-meeting.html'" class="btn">Back to Schedule Meeting</button>
+        <!-- <button onclick="window.location.href='logout.html'" class="btn">Logout</button> -->
+        <div id="meetingsList">
+            <!-- Meetings will be displayed here -->
+        </div>
+    </div>
+
+    <script src="view-meetings.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler - Feed</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Client Management App</div>
+            <div class="nav-links">
+                <a href="logout.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Login Success Message -->
+        <div class="success-message">
+            <span>login successful for user</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Welcome to the Meeting Scheduler</h1>
+            <p>Please choose an option below:</p>
+
+            <!-- Buttons for Scheduling and Viewing Meetings -->
+            <div class="button-container">
+                <button class="btn schedule-btn" id="scheduleMeetingsBtn">Schedule a Meeting</button>
+                <button class="btn view-btn" id="viewMeetingsBtn">View Scheduled Meetings</button>
+            </div>
+        </div>
+    </div>
+    <script src="schedule.js"></script> 
+    <script>
+        document.getElementById('scheduleMeetingsBtn').addEventListener('click', function() {
+            window.location.href = "schedule-meeting.html"; // Redirect to schedule-meeting.html
+        });
+    </script>  
+    <script>
+        document.getElementById('viewMeetingsBtn').addEventListener('click', function() {
+            window.location.href = "view-meetings.html"; // Redirect to view-meetings.html
+        });
+    </script>
+</body>
+</html>

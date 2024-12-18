@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Client Management App</title>
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Client Management App</div>
+        </nav>
+    </header>
+
+    <!-- Logout Section -->
+    <div class="logout-container">
+        <h1>Are you sure you want to log out?</h1>
+        <div class="button-container">
+            <button id="logoutBtn" class="btn">Logout</button>
+            <button id="cancelBtn" class="btn cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <div id="logoutMessage" style="display: none;">
+        <p>Logout successful. Redirecting to login page...</p>
+    </div>
+
+    <script src="logout.js"></script>
+</body>
+</html>

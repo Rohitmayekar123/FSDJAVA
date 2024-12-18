@@ -1,0 +1,36 @@
+<div class="background-container">
+  <header class="app-header">
+    <h1>Client Management App</h1>
+  </header>
+
+  <div class="form-container">
+    <div class="form-content">
+      <h2>Login</h2>
+      <form (submit)="onLogin($event, usernameInput.value, passwordInput.value)">
+        <!-- Username Input -->
+        <label for="username">Username</label>
+        <input 
+          type="text" 
+          id="username" 
+          #usernameInput 
+          placeholder="Username is Registered Email" 
+          required 
+        />
+
+        <!-- Password Input -->
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          #passwordInput 
+          placeholder="Enter your password" 
+          required 
+        />
+
+        <!-- Buttons -->
+        <button type="submit" class="login-btn" (click)="onLogin($event, usernameInput.value, passwordInput.value)">Login</button>
+        <button type="button" class="register-btn" (click)="onRegister()">Register</button>
+      </form>
+    </div>
+  </div>
+</div>

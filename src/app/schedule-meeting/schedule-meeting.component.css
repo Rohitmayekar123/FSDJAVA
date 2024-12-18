@@ -1,0 +1,130 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* View Scheduled Meetings Button Styling */
+.view-scheduled-btn-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.view-scheduled-btn-container .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.view-scheduled-btn-container .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Schedule Meeting Form Styling */
+.schedule-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.schedule-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-container label {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.schedule-container input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.schedule-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.schedule-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.schedule-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 600px) {
+  .schedule-container {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  .navbar .nav-links a {
+    font-size: 16px;
+  }
+
+  .view-scheduled-btn-container .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

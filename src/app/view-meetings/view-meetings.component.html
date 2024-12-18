@@ -1,0 +1,36 @@
+<div class="meeting-list">
+    <h2>Scheduled Meetings</h2>
+    
+    <!-- Check if meetings exist, otherwise display a message -->
+    <div class="no-meetings" *ngIf="meetings.length === 0">No meetings scheduled yet.</div>
+  
+    <!-- Manually render the meetings -->
+    <div class="meeting-item" *ngIf="meetings[0]">
+      <strong>{{ meetings[0].topic }}</strong>
+      <p>Start: {{ meetings[0].startDateTime }}</p>
+      <p>End: {{ meetings[0].endDateTime }}</p>
+      <p>Participants: {{ meetings[0].numParticipants }}</p>
+      <button (click)="onDelete(meetings[0])">Delete</button>
+    </div>
+  
+    <div class="meeting-item" *ngIf="meetings[1]">
+      <strong>{{ meetings[1].topic }}</strong>
+      <p>Start: {{ meetings[1].startDateTime }}</p>
+      <p>End: {{ meetings[1].endDateTime }}</p>
+      <p>Participants: {{ meetings[1].numParticipants }}</p>
+      <button (click)="onDelete(meetings[1])">Delete</button>
+    </div>
+  
+    <div class="meeting-item" *ngIf="meetings[2]">
+      <strong>{{ meetings[2].topic }}</strong>
+      <p>Start: {{ meetings[2].startDateTime }}</p>
+      <p>End: {{ meetings[2].endDateTime }}</p>
+      <p>Participants: {{ meetings[2].numParticipants }}</p>
+      <button (click)="onDelete(meetings[2])">Delete</button>
+    </div>
+  
+    <!-- Additional meeting items can be manually added here as needed -->
+  
+    <button (click)="onBack()">Back to Schedule Meeting</button>
+  </div>
+  

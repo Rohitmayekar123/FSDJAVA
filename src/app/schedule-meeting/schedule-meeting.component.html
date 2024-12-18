@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Meeting</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Client Management App</div>
+            <div class="nav-links">
+                <a href="logout.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- View Scheduled Meetings Button -->
+    <div class="view-scheduled-btn-container">
+        <a href="view-meetings.html" class="btn">View Scheduled Meetings</a>
+    </div>
+
+    <!-- Schedule Meeting Form -->
+    <div class="schedule-container">
+        <h2>Schedule a Meeting</h2>
+        <form id="scheduleForm">
+            <!-- New Fields Added -->
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" name="topic" placeholder="Enter meeting topic" required>
+
+            <label for="startDateTime">Start Date and Time</label>
+            <input type="datetime-local" id="startDateTime" name="startDateTime" required>
+
+            <label for="endDateTime">End Date and Time</label>
+            <input type="datetime-local" id="endDateTime" name="endDateTime" required>
+
+            <label for="numParticipants">Number of Participants</label>
+            <input type="number" id="numParticipants" name="numParticipants" placeholder="Enter number of participants" required>
+
+            <button type="submit" id="submitBtn" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- <script src="schedule.js"></script> -->
+</body>
+</html>

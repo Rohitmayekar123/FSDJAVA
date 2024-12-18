@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Navbar */
+header {
+    background-color: #0078FF; /* Blue header */
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Content Container */
+.container {
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Success Message */
+.success-message {
+    color: darkblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Main Content */
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.schedule-btn {
+    background-color: #0078FF; /* Blue button */
+}
+
+.view-btn {
+    background-color: #0066CC; /* Slightly darker blue */
+}
+
+.btn:hover {
+    background-color: #005BB5; /* Darker blue on hover */
+    transition: background-color 0.3s ease;
+}
